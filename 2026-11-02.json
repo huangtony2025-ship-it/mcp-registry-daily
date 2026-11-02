@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T15:13:14.808Z",
+  "source": "MCPNav daily sync of the official Model Context Protocol registry",
+  "upstream": "https://github.com/modelcontextprotocol/registry",
+  "upstream_schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "total_entries": 16880,
+  "note": "Initial snapshot. Daily diffs (new/changed servers) start from the next run. File lives at repo root for now (web-editor upload cannot create nested folders); will move under data/ once a repo-scoped token is approved."
+}
