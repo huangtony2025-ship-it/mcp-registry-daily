@@ -4,7 +4,8 @@ Daily snapshots of the [official Model Context Protocol registry](https://github
 
 ## Files
 
-- `YYYY-MM-DD.json` — one snapshot per day: `total_entries`, source, upstream link and a `generated_at` timestamp. Entries are repository-level records (`owner/repo` keys) synced by MCPNav. Daily diffs (new/changed servers) start from the second snapshot.
+- `data/YYYY-MM-DD.json` — one snapshot per day: `total_entries`, source, upstream link and a `generated_at` timestamp. Entries are repository-level records (`owner/repo` keys) synced by MCPNav.
+- `data/2026-11-02.json` is the initial snapshot (first synced on 2026-11-02, committed at repo root and moved into `data/` the next day). Daily diffs (new/changed servers) start from the second snapshot.
 
 ## Source & disclaimer
 
