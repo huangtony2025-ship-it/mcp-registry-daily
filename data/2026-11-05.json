@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-05",
+  "type": "status",
+  "note": "No server snapshot was committed today. The full-snapshot format (26MB, see 2026-11-04) is under review for sustainability; an incremental (updated_since) changelog format has been proposed and technically verified but is awaiting a format decision. See README for the snapshot format. This file only records the gap - no server data in this file.",
+  "last_full_snapshot": "2026-11-04 (fetched_at 2026-11-03T23:51:53Z, 211818 entries)",
+  "gap_note": "2026-11-03 has no snapshot (the registry API has no historical endpoint; documented in the 2026-11-04 run)."
+}
