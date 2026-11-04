@@ -1,11 +1,13 @@
 # mcp-registry-daily
 
-Daily snapshots of the [official Model Context Protocol registry](https://github.com/modelcontextprotocol/registry).
+Daily changelogs and periodic snapshots of the [official Model Context Protocol registry](https://github.com/modelcontextprotocol/registry).
 
-## Files
+## Files (`data/`)
 
-- `data/YYYY-MM-DD.json` — one snapshot per day: `total_entries`, source, upstream link and a `generated_at` timestamp. Entries are repository-level records (`owner/repo` keys) synced by MCPNav.
-- `data/2026-11-02.json` is the initial snapshot (first synced on 2026-11-02, committed at repo root and moved into `data/` the next day). Daily diffs (new/changed servers) start from the second snapshot.
+- **Delta files** (`YYYY-MM-DD.json`, most days): servers **added or updated** since the previous baseline, fetched via the registry's `updated_since` parameter. Fields: `counts.new`, `counts.updated`, `new[]` and `updated[]` (compact: name/title/version/prev_version).
+- **Full snapshots** (weekly baseline): every entry in the registry at fetch time. `2026-11-04.json` is the first full snapshot (211,818 name@version records, fetched_at 2026-11-03T23:51:53Z).
+- `2026-11-03` has no file (the registry API has no historical endpoint; the gap is documented, not backfilled).
+- `2026-11-02.json` was the initial seed snapshot (16,880 repository-level records from MCPNav's early sync).
 
 ## Source & disclaimer
 
